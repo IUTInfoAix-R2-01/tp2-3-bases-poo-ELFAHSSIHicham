@@ -1,30 +1,46 @@
-package Exercice2; 
+package Exercice2;
 
-public class Circle {  // Save as "Circle.java"
-  
-   private double radius;
-   private String color;
-   
-   // Constructors (overloaded)
-   
-   public Circle() {  // 1st (default) constructor
-      radius = 1.0;
-      color = "red";
-   }
-   
-   /** Constructs a Circle instance with the given radius and default color */
-   public Circle(double r) {  // 2nd constructor
-      radius = r;
-      color = "red";
-   }
-   
-   /** Returns the radius */
-   public double getRadius() {
-     return radius; 
-   }
-   
-   /** Returns the area of this Circle instance */
-   public double getArea() {
-      return radius*radius*Math.PI;
-   }
+public class Circle {
+	
+	private double radius;
+	private String color;
+	   
+	  
+	   public Circle() {  
+	      this.radius = 1.0;
+	      this.color = "red";
+	   }
+	   
+	   public Circle(double radius) {  
+	      this.radius = radius;
+	      this.color = "red";
+	   }
+	   
+	   
+	   
+	   public double getRadius() {
+	     return radius; 
+	   }
+	   
+	   
+	   public double getArea() {
+	      return radius*radius*Math.PI;
+	   }
+	   public String getColor() { 
+		   return this.color;
+	   }
+	   
+	   public void setRadius(double Radius) {
+		   this.radius = Radius;
+		}
+	   
+	   public void setColor(String newColor) { 
+		   this.color = newColor;
+	   }
+	   public String toString() {
+		   return "Circle[radius=" + radius + " color=" + color + "]";
+		}
+
 }
+
+   
